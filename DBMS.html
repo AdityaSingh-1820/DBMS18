@@ -1,0 +1,369 @@
+<html>
+ <head>
+  <title>DBMS</title>
+<style>
+    body {
+      font-family: Times roman , sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+       }
+</style>
+ </head>
+   <body><p><h1> UNIT 1: DATABASE MANAGEMENT SYSTEM</h1></P>
+
+<P> <h2>What is Data?</h1>
+  <p>
+    <strong>Data</strong> refers to raw facts, figures, or information that can be collected, stored, processed, and analyzed.
+    It can represent anything—from numbers, characters, and symbols to images and audio. Data becomes meaningful when
+    it is interpreted or processed in a way that adds context.
+  </p>
+
+  <h3>Types of Data</h2>
+  <p>Data can be broadly categorized into two main types: <em>Qualitative (Categorical)</em> and <em>Quantitative (Numerical)</em>.</p>
+
+  <h4>1. Qualitative Data (Categorical Data)</h3>
+  <p>This type of data describes categories or qualities and cannot be measured with numbers.</p>
+  <ul>
+    <li>
+      <strong>Nominal Data</strong><br />
+      Represents categories withno specific order.<br />
+      Examples: Gender (Male/Female), Eye Color (Brown, Blue), Country Names.
+    </li>
+    <li>
+      <strong>Ordinal Data</strong><br />
+      Represents categories with a meaningful order, but the intervals between them are not uniform.<br />
+      Examples: Education Level (High School &lt; Bachelor &lt; Master &lt; PhD), Customer Satisfaction (Poor &lt; Fair &lt; Good &lt; Excellent).
+    </li>
+  </ul>
+
+  <h4>2. Quantitative Data (Numerical Data)</h3>
+  <p>This type of data is measurable and deals with numbers.</p>
+  <ul>
+    <li>
+      <strong>Discrete Data</strong><br />
+      Consists of countable values.<br />
+      Examples: Number of students in a class, Number of cars in a parking lot.
+    </li>
+    <li>
+      <strong>Continuous Data</strong><br />
+      Can take any value within a range and is typically measured.<br />
+      Examples: Height, Weight, Temperature, Time.
+    </li>
+  </ul>
+
+  <h2>Other Classifications of Data</h2>
+  <ul>
+    <li><strong>Structured Data</strong>: Organized and easily searchable (e.g., in spreadsheets or databases).</li>
+    <li><strong>Unstructured Data</strong>: Lacks a predefined format (e.g., emails, videos, social media posts).</li>
+    <li><strong>Semi-structured Data</strong>: Partially organized (e.g., JSON, XML).</li>
+  </ul>
+
+  <h2>Summary Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Data Type</th>
+        <th>Subtype</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Qualitative (Categorical)</td>
+        <td>Nominal</td>
+        <td>Red, Blue, Male, Female</td>
+        <td>No inherent order</td>
+      </tr>
+      <tr>
+        <td>Qualitative (Categorical)</td>
+        <td>Ordinal</td>
+        <td>Low, Medium, High</td>
+        <td>Has an order but not measurable</td>
+      </tr>
+      <tr>
+        <td>Quantitative (Numerical)</td>
+        <td>Discrete</td>
+        <td>1, 2, 3</td>
+        <td>Countable numbers</td>
+      </tr>
+      <tr>
+        <td>Quantitative (Numerical)</td>
+        <td>Continuous</td>
+        <td>5.5, 3.14, 98.6</td>
+        <td>Measurable, can have decimals</td>
+      </tr>
+    </tbody>
+  </table><br>
+<br>
+  <h2>What is a Database?</h1>
+    <p>
+        A <strong>database</strong> is an organized collection of data that is stored and managed electronically.
+        It allows you to store, retrieve, and manipulate data efficiently. Think of it like a digital filing cabinet
+        where information is kept in a structured way so it can be easily accessed and updated.
+    </p>
+    <p>
+        Databases are used in almost every application — from websites and apps to large enterprise systems — to keep track
+        of data like customer info, products, transactions, etc.
+    </p>
+
+    <h2>Types of Databases</h2>
+    <ul>
+        <li>
+            <strong>Relational Database (RDBMS):</strong>  
+            Stores data in tables (rows and columns). Uses <code>SQL</code> for managing data.<br />
+            Examples: MySQL, PostgreSQL, Oracle, SQL Server.
+        </li>
+        <li>
+            <strong>NoSQL Database:</strong>  
+            Designed for unstructured or semi-structured data. Stores data as documents, key-value pairs, graphs, or wide-columns.<br />
+            Examples: MongoDB, Redis, Cassandra, Neo4j.
+        </li>
+        <li>
+            <strong>Object-Oriented Database:</strong>  
+            Stores data as objects, similar to programming languages.<br />
+            Examples: db4o, ObjectDB.
+        </li>
+        <li>
+            <strong>Hierarchical Database:</strong>  
+            Organizes data in a tree-like structure with parent-child relationships.<br />
+            Example: IBM's IMS.
+        </li>
+        <li>
+            <strong>Network Database:</strong>  
+            Allows many-to-many relationships; similar to hierarchical but more flexible.<br />
+            Used in some legacy systems.
+        </li>
+        <li>
+            <strong>Graph Database:</strong>  
+            Stores data in nodes and edges representing relationships.<br />
+            Examples: Neo4j, Amazon Neptune.
+        </li>
+    </ul>
+<br>
+<br>
+<b>
+    <h2>DBMS (Database Management System)</h2>
+
+           <p>
+            DBMS is a computerized record keeping system. It is a software that defines, manipulates and manages the database. 
+            It allows to access the file, update the record and retrieve data as requested. In other word, DBMS is defined as 
+            the collection of interrelated data and set of programs to access there data. The collection of data is usually a database 
+            which contains the information about any particular organization. The primary goal of DBMS is to provide an effective and 
+            efficient environment for both data retrieval and storing data in database. For example MS Access, Oracle, MY SQL, Fox-Pro, D-base etc.
+        </p>
+   
+
+    
+        <h3>Advantages of DBMS</h3>
+        <ol>
+            <li><strong>Sharing data:</strong> Using DBMS, data stored in database can be shared among multiple users or computer. For example, branches of bank share data from database.</li>
+            <li><strong>Reduce data redundancy:</strong> Data redundancy refer to duplication or repetition of same data over and over. DBMS reduces such type of unnecessary repetition of data.</li>
+            <li><strong>Data backup and recovery:</strong> Using DBMS, we can easily create spare copy of original files and documents that can be later used in case of accidental or intentional loss and damages.</li>
+            <li><strong>Data security:</strong> Using DBMS we can restrict use of database to the unauthorized person. It helps to ensure data security.</li>
+            <li><strong>Multiple user interface:</strong> DBMS facilitates sharing of data which means same data can be accessed from multiple device and location. Hence, user can experience multiple interface to access same set of data.</li>
+            <li><strong>Data Integrity:</strong> Data Integrity refers to consistency of data. Using database we can arrange same sort of data in a like order. We can define and enforce constraints for data integrity.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Disadvantages of DBMS</h2>
+        <ol>
+            <li><strong>Expensive:</strong> It may be expensive to run and operate DBMS for any organization.</li>
+            <li><strong>Changing Technology:</strong> It is very much difficult to incorporate latest changing technology in existing system. In order to create and maintain database technical manpower and trainings are required.</li>
+            <li><strong>Backup is needed:</strong> Since data maybe damage anytime accidentally or intentionally. So, it is mandatory to create a backup.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Database Model</h2>
+        <p>
+            There are different forms of Database Management system. Each characterized by the way where data are defined and structured. 
+            This arrangement of data in several structure are known as database model. Different types of database model. 
+                   </p>
+
+        <h3>Hierarchical database model</h3>
+        <p>
+            It is one of the oldest type of database model. In this model data are represented in the forms of record, each record has multiple field or attributes. 
+            All records are arranged in database as tree like structure. The relationship between the records is called parent child relationship in which one child record relates 
+            to only a single parent i.e child posses property only property of a single parent. Here child are restricted to use the property of a parent to whom it doesn't belong.
+        </p>
+        <h4>Advantages</h4>
+        <ul>
+            <li>It is the simplest and the easiest model.</li>
+            <li>It supports one to one or one to many relationship.</li>
+            <li>Searching is easier and faster if parent is known.</li>
+        </ul>
+        <h4>Disadvantages</h4>
+        <ul>
+            <li>It is an old fashion and outdated database model.</li>
+            <li>It doesn’t support many to one relationship.</li>
+            <li>It doesn’t reduce data redundancy because some data are written over different places.</li>
+        </ul>
+
+        <h3>Network database model</h3>
+        <p>
+            This network model replace hierarchical model due to some limitation on the model. Suppose an employee relates to two different department then hierarchical model 
+            cannot be able to arrange record in proper place. So, network database model was emerged to arrange non-hierarchical database. The structure of database is more like graph rather than tree structure. 
+            A network model consists of collection of record which are interrelated to each other with the help of relationship. Each records have multiple fields and each field has only one data value. 
+            In this type of model a parent may have multiple child, as well as child can have multiple parent.
+        </p>
+        <h4>Advantages</h4>
+        <ul>
+            <li>It accepts many to many relationships. So, It is more flexible.</li>
+            <li>It reduces data redundancy.</li>
+            <li>This network mode is simple and easy to design.</li>
+            <li>Searching is faster due to use of multi-directional pointer.</li>
+        </ul>
+        <h4>Disadvantages</h4>
+        <ul>
+            <li>Needs long program to handle the relationship.</li>
+            <li>Lack of structural independence.</li>
+            <li>Less security.</li>
+        </ul>
+
+        <h3>Relational database model</h3>
+        <p>
+            In relational database model, the data are organized into tables which contains multiple row and columns. These tables are called relations. 
+            A row in a table represents a relationship among a set of values. Since, a table is collection of such relationship. It is generally referred to the mathematical term relations 
+            from which the relational database model derives its name. It is also known as RDBMS.
+        </p>
+        <p class="note">
+            Note: The database system which stores and display data in tabular format of rows and column like spreadsheet is known as RDBMS. It is the most practical DBMS those days. 
+            For example, MS-Access, MY SQL, Oracle etc
+        </p>
+        <h4>Advantages</h4>
+        <ul>
+            <li>There is less data redundancy.</li>
+            <li>Breaking of complex database into simple is very much easier.</li>
+            <li>Database processing is faster than other model.</li>
+        </ul>
+        <h4>Disadvantage</h4>
+        <ul>
+            <li>Establishing more relationships complex.</li>
+            <li>It requires powerful computer and data storage device.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Centralized database VS Distributed database</h2>
+
+        <h3>Centralized database</h3>
+        <p>
+            It is a simple type which works on client server basis. In this type clients or user are directly connected to the centrally totally located server. 
+            This server hosts the data of its client or user and helps them to store and retrieve data as requirement. This type of system are used in small scale industries which doesn't have to deal with large volume of data and user. 
+            Centralized database runs on single computer which may have single or multiple user. Since database is centralized, security is not a crucial part here. 
+            The maintenance of database is easier because of data are centrally stored. This type of system denote allow unauthorized person to access data.
+        </p>
+        <h4>Advantages</h4>
+        <ul>
+            <li>Suitable for small scale industries.</li>
+            <li>Operation and maintenance is easier.</li>
+            <li>Since it prevent unauthorized person being accessed to database, it minimizes risk factor.</li>
+        </ul>
+        <h4>Disadvantages</h4>
+        <ul>
+            <li>Data are not secured in this type of system.</li>
+            <li>Not suitable for large scale industries.</li>
+            <li>Failure of centrally located serves will collapse whole network.</li>
+        </ul>
+
+        <h3>Distributed database</h3>
+        <p>
+            This type of database system are complex in structure, instead of storing and retrieving data from centrally located server, it uses several numbers of database and server randomly located at different place. 
+            It is the collection of multiple logically interrelated database which are distributed in many geographical location. Since server are located at different locations user can experience a good speed of bandwidth. 
+            Similarly, back up and recovery process is lot more easier there, which makes data more secured. This type of system is used by large organization who has to deal with large volume of data and user all around the world. 
+            Since it is distributed in nature there may arises security issue and are costly to maintain and operate. Simply, distributed database system are the collection of several number of centralized database system in different locations.
+        </p>
+        <h4>Advantages</h4>
+        <ul>
+            <li>Backup and recovery of data is easier.</li>
+            <li>It can handle large volume of data and user all over the word.</li>
+            <li>User can experience high speed bandwidth.</li>
+        </ul>
+        <h4>Disadvantages</h4>
+        <ul>
+            <li>Very expensive to operate and maintain.</li>
+            <li>Data security may be real issue.</li>
+        </ul>
+    </div>
+</body>
+</html>
+<br>
+<br>
+ <h1>Structured Query Language (SQL)</h1>
+    <p><strong>SQL</strong> stands for <em>Structured Query Language</em>. It is an international standard database query language for accessing and managing data in the database. SQL was introduced and developed by IBM in the early 1970’s. It was able to control relational databases.</p>
+    <p>SQL is not a complete programming language. It is only used for communicating with the database. SQL has statements for data definition (DDL), data manipulation (DML), and data control (DCL). A query is a request to a DBMS for the retrieval, modification, insertion, and deletion of data from the database.</p>
+    
+    <h2>Sub Languages of SQL</h2>
+    <p>SQL is made of three sub languages: DDL, DML, and DCL</p>
+
+    <h3>1) DDL (Data Definition Language)</h3>
+    <p>DDL is used by the database designer and programmers to specify the content and the structure of tables. It is used to define the physical characteristics of records. It includes commands that manipulate the structure of objects such as tables.</p>
+    <p><strong>Example:</strong> To create a table</p>
+    <pre><code>CREATE TABLE table_name (field_name1 data_type1, field_name2 data_type2, …);</code></pre>
+    <pre><code>CREATE TABLE Student (SN Number, Fname text);</code></pre>
+
+    <h3>2) DML (Data Manipulation Language)</h3>
+    <p>DML is related to the manipulation of records such as retrieval, sorting, display, and deletion of records or data. It helps users to query and display reports of the table. It provides techniques for processing the database. Commands include insert, delete, select, and update to manipulate information stored in the database.</p>
+    <p><strong>Example:</strong></p>
+    <pre><code>INSERT INTO table_name VALUES (list of values);</code></pre>
+    <pre><code>INSERT INTO student VALUES (1, 'RAM');</code></pre>
+
+    <h3>3) DCL (Data Control Language)</h3>
+    <p>DCL provides additional features for the security of tables and databases. It includes commands for controlling data and access to the database.</p>
+    <p><strong>Examples:</strong> grant, commit, etc.</p>
+
+    <h1>Entity Relationship Database Model (ER Model)</h1>
+    <p>The entity relationship database model (ER diagram) is based on the perception of a real world that contains a collection of basic objects called entities and relationships among these objects. The ER diagram is an overall logical structure of the database that can be expressed graphically. It was developed to facilitate database design. The major objective of an ER diagram is to show relationships among different entities.</p>
+
+    <h2>Components of ER Diagram</h2>
+    <ol>
+        <li>
+            <strong>Entity:</strong> A distinguishable object of this real world is known as an entity. It has a set of properties which uniquely identify an entity. For example, if "student" is an entity then his/her name may be a property. Entities are denoted by a rectangle.
+        </li>
+        <li>
+            <strong>Attributes:</strong> Attributes are the properties possessed by an entity. They are represented by an ellipse or oval shape. For example, if "student" is an entity, its attributes can be registration number, name, roll no, class, address, etc.
+        </li>
+        <li>
+            <strong>Link:</strong> The flow of information is indicated by the link in ER diagram. It is simply denoted by a line and connects entities, attributes, and relationships.
+        </li>
+        <li>
+            <strong>Relationships:</strong> A relationship is an association among several entities. It is represented by a diamond. For example, if teachers and students are two entities, the association can be "teacher teaches students." It shows meaningful dependencies between several entities. There are 3 types of relationships: One-to-One, One-to-Many, Many-to-Many.
+        </li>
+    </ol>
+
+    <h1>DBA (Database Administrator)</h1>
+    <p>DBA is the most responsible person in an organization with sound knowledge of DBMS. He/she is the overall administrator of the program. He/she has the maximum amount of privileges for accessing the database and defining the roles of the employees who use the system. The main goal of a DBA is to keep the database server up to date, secure, and provide information to the user on demand.</p>
+
+    <h2>Qualities of a Good DBA</h2>
+    <ul>
+        <li>Sound and complete knowledge about DBMS and its operation.</li>
+        <li>Familiarity with several DBMS packages such as MS Access, MySQL, Oracle, etc.</li>
+        <li>Depth knowledge about the operating system in which the database server is running.</li>
+        <li>Good understanding of network architecture.</li>
+        <li>Good database designing skills.</li>
+    </ul>
+
+    <h2>Responsibilities of a DBA</h2>
+    <ul>
+        <li>Install, monitor, and upgrade database server.</li>
+        <li>Maintain database security by creating backups for recovery.</li>
+        <li>Conduct training on the use of the database.</li>
+        <li>Define user privileges, relationships, and manage forms and reports in the database.</li>
+    </ul>
+
+    <h1>Normalization (Very Important)</h1>
+    <p>Normalization is the process of breaking down or decomposing a complex relation into simpler relations. It reduces redundancy (unnecessary repetition of data) using the principle of non-loss decomposition in which tables are reduced to smaller tables without loss of information.</p>
+    <p>Normalization is the database design process in which a complex database table is broken down into simpler separate tables. It makes the data model more flexible and easier to maintain.</p>
+    <p>EF Codd introduced a few rules for normalizing the database in 1970, and these rules are known as normal forms. This process minimizes and controls the duplication of data in a database and also provides a rapid search for data from the database.</p>
+
+
+
+
+
+
+
+
+   </body>
+</html>
